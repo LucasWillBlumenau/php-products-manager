@@ -1,0 +1,52 @@
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #00000077;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 45px 25px;
+    border-radius: 5px;
+    background-color: #111;
+    min-width: 275px;
+    animation: openPopup 400ms ease-out;
+}
+
+.popup button {
+    background-color: var(--hover-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.popup-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@keyframes openPopup {
+    from {
+        opacity: 0.4;
+        transform: translateX(60%);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
