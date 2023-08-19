@@ -11,16 +11,8 @@
     <title>PHP Website</title>
 </head>
 <body>
-
-    <div class="sidebar">
-        <h2>Aula de Emanuel</h2>
-        <ul class="sidebar-list">
-            <li class="sidebar-item"><a href="/search-product.html">Busque Por um Produto</a></li>
-            <li class="sidebar-item"><a href="/add-product.html">Cadastre Produtos</a></li>
-            <li class="sidebar-item"><a href="/">Ver Tudo</a></li>
-        </ul>
-    </div>
     
+    <?php include "../partials/navbar.php" ?> 
     <div class="container">
         <form class="form">
             <h2>Busque pelos produtos</h2>

@@ -27,7 +27,7 @@ const createOptionsTd = () => {
 }
 
 
-const createRowElement = ([id, name, price]) => {
+const createRowElement = ({ id, name, price }) => {
 
     const tr = document.createElement('tr')
     

@@ -11,15 +11,7 @@
 </head>
 <body>
 
-    <div class="sidebar">
-        <h2>Aula de Emanuel</h2>
-        <ul class="sidebar-list">
-            <li class="sidebar-item"><a href="/search-product.html">Busque Por um Produto</a></li>
-            <li class="sidebar-item"><a href="/add-product.html">Cadastre Produtos</a></li>
-            <li class="sidebar-item"><a href="/">Ver Tudo</a></li>
-        </ul>
-    </div>
-    
+    <?php include "../partials/navbar.php" ?> 
     <div class="container">
         <div class="info">
             <h1 class="info-title">

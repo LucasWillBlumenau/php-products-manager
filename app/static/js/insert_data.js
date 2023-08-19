@@ -1,14 +1,16 @@
 const form = document.querySelector('form')
 
 
-const insertData = async (data) => {
+const insertData = async ({ name: name, price: price }) => {
+    const data = new FormData()
+    data.append('name', name)
+    data.append('price', price)
     const response = await fetch('endpoints/insert.php', {
         method: 'POST',
         headers: {
-            'Content-Type': 'Application/JSON',
             'Charset': 'UTF8'
         },
-        body: JSON.stringify(data)
+        body: data
     })
     return response
 }
@@ -16,7 +18,8 @@ const insertData = async (data) => {
 const submitData = async event => {
     event.preventDefault()
     const [name, price] = [event.target[0].value, event.target[1].value]
-    const response = await insertData({name: name, price: price})
+    const response = await insertData({ name: name, price: price })
+    console.log(await response.json());
     if (!response.ok) {
         alert('Erro ao inserir dados')
         return
