@@ -1,9 +1,6 @@
 <?php
-    include "json_response.php";
-    include "../../models/Product.php";
+    include "../../controllers/ProductController.php";
 
-    $product = new Product(["name" => $_POST["name"], "price" => $_POST["price"]]);
-    $product->save();
-    
-    json_response($product, 201);
+    $response = ProductController::save($_POST["name"], $_POST["price"]);
+    $response->send();
 ?>

@@ -1,7 +1,6 @@
 <?php
-    include "json_response.php";
-    include "../../models/Product.php";
+    include "../../controllers/ProductController.php";
 
-    $data = Product::get_all();
-    json_response($data);
+    $response = ProductController::select_all();
+    $response->send();
 ?>
