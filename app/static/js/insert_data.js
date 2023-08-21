@@ -5,7 +5,7 @@ const insertData = async ({ name: name, price: price }) => {
     const data = new FormData()
     data.append('name', name)
     data.append('price', price)
-    const response = await fetch('endpoints/insert.php', {
+    const response = await fetch('endpoints/products/insert.php', {
         method: 'POST',
         headers: {
             'Charset': 'UTF8'

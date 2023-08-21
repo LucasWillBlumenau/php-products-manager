@@ -6,7 +6,7 @@ const deleteRecord = async (recordID) => {
     const data = new FormData()
     data.append('id', recordID)
 
-    const response = await fetch('endpoints/delete.php', {
+    const response = await fetch('endpoints/products/delete.php', {
         method: 'POST',
         body: data
     })
@@ -69,7 +69,7 @@ const insertRecordsIntoDOM = (records) => {
 
 
 const init = async () => {
-    const response = await fetch('endpoints/select.php')
+    const response = await fetch('endpoints/products/select.php')
     const data = await response.json()
     insertRecordsIntoDOM(data)
 }

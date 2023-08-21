@@ -2,7 +2,7 @@ const form = document.querySelector('form')
 
 
 const fetchData = async recordID => {
-    const response = await fetch(`/endpoints/select_product.php?id=${recordID}`)
+    const response = await fetch(`/endpoints/products/select_product.php?id=${recordID}`)
     
     if (response.status === 404) {
         throw new Error('Não há nenhum produto com o id informado')

@@ -2,8 +2,8 @@
 
     class Response {
 
-        public $content;
-        public $status;
+        private $content;
+        private $status;
 
         public function __construct($content, $status) {
             $this->content = $content;
