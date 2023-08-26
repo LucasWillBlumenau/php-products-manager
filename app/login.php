@@ -23,6 +23,7 @@
             <a href="signup.php" class="form-link">Não tem uma conta? Crie uma!</a>
         </form>
     </div>
+    <script src="./static/js/redirect.js"></script>
     <script src="static/js/handle_login.js"></script>
 </body>
 </html>

@@ -19,11 +19,6 @@ const sendLoginCrendetials = async (username, password) => {
     return response.json()
 }
 
-const redirect = async relativeURLPath => {
-    const response = await fetch(relativeURLPath)
-    location.href = response.url
-} 
-
 
 const handleLogin = async event => {
     event.preventDefault()

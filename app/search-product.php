@@ -23,7 +23,9 @@
             <button type="submit" class="button" >Buscar</button>
         </form>
     </div>
+    <script src="./static/js/redirect.js"></script>
     <script src="./static/js/check_auth.js"></script>
+    <script src="./static/js/handle_logout.js"></script>
     <script src="/static/js/search_products.js"></script>
 </body>
 </html>

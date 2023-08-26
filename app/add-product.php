@@ -26,7 +26,9 @@
             <button type="submit" class="button" >Inserir Produto</button>
         </form>
     </div>
+    <script src="./static/js/redirect.js"></script>
     <script src="./static/js/check_auth.js"></script>
+    <script src="./static/js/handle_logout.js"></script>
     <script src="./static/js/insert_data.js"></script>
 </body>
 </html>
