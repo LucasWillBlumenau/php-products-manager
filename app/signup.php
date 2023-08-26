@@ -27,5 +27,7 @@
             <a href="login.php" class="form-link">Já tem uma conta? Faça login!</a>
         </form>
     </div>
+    <script src="./static/js/redirect.js"></script>
+    <script src="static/js/handle_signup.js"></script>
 </body>
 </html>
