@@ -25,6 +25,17 @@
             }
             return $token;
         }
+
+        public static function check_credentials($username, $password) {
+            $user = new User(["username" => $username, "password" => $password]);
+            $data = $user->select_with_credentials();
+            if ($data == null) {
+                $response = new Response(["content" => "wrong crendentials"], 400);
+                $response->send();
+            }
+            $response = new Response(new Token($data), 200);
+            return $response;
+        }
     }
     
 ?>

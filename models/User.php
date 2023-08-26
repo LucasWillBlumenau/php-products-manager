@@ -37,6 +37,17 @@
             $conn->close();
             return $result->fetch_assoc();
         }
+
+        public function select_with_credentials() {
+            $conn = get_connection();
+            $sql = "SELECT tokens.id, token, user_id FROM users INNER JOIN tokens on users.id = tokens.user_id WHERE username = ? AND password = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("ss", $this->username, $this->password);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $conn->close();
+            return $result->fetch_assoc();
+        }
     } 
 
 ?>

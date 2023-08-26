@@ -13,11 +13,11 @@
             <h2 class="form-title">Faça Login</h2>
             <div class="input-container">
                 <label for="username">Nome de Usuário:</label>
-                <input type="text" name="username">
+                <input type="text" name="username" required> 
             </div>
             <div class="input-container">
                 <label for="password">Senha:</label>
-                <input type="password" name="password">
+                <input type="password" name="password" required>
             </div>
             <button class="button">Entrar</button>
             <a href="signup.php" class="form-link">Não tem uma conta? Crie uma!</a>

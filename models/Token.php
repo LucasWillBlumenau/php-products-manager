@@ -9,7 +9,7 @@
         public function __construct($args) {
             $this->id = isset($args["id"])? $args["id"]: null;
             $this->token = isset($args["token"])? $args["token"]: null;
-            $this->user_id = isset($args["user_id"])? $args["user"]: null;
+            $this->user_id = isset($args["user_id"])? $args["user_id"]: null;
         }
 
         private function generate_token() {

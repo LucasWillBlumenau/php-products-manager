@@ -72,7 +72,11 @@ const insertRecordsIntoDOM = (records) => {
 
 
 const init = async () => {
-    const response = await fetch('endpoints/products/select.php')
+    const response = await fetch('endpoints/products/select.php', {
+        headers: {
+            'Authorization-Token': localStorage.getItem('authtoken')
+        }
+    })
     const data = await response.json()
     insertRecordsIntoDOM(data)
 }
