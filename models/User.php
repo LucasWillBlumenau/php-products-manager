@@ -1,6 +1,4 @@
 <?php
-    include "Token.php";
-
     class User {
 
         public $id;
@@ -24,7 +22,7 @@
             $this->id = mysqli_insert_id($conn);
             $conn->close();
 
-            $token = new Token(["user" => $this]);
+            $token = new Token(["user_id" => $this->id]);
             $token->save();
             $this->token = $token->token;
         }

@@ -1,7 +1,5 @@
 <?php
 
-    include "Database.php";
-
     class Product {
         
         public $id;

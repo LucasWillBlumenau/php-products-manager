@@ -7,6 +7,9 @@ const deleteRecord = async (recordID) => {
     data.append('id', recordID)
 
     const response = await fetch('endpoints/products/delete.php', {
+        headers: {
+            'Authorization-Token': localStorage.getItem('authtoken')
+        },
         method: 'POST',
         body: data
     })

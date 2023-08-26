@@ -26,6 +26,7 @@
             <button type="submit" class="button" >Inserir Produto</button>
         </form>
     </div>
+    <script src="./static/js/check_auth.js"></script>
     <script src="./static/js/insert_data.js"></script>
 </body>
 </html>

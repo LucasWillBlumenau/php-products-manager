@@ -1,9 +1,4 @@
-<?php
-
-    include '../../../models/Product.php';
-    include 'Response.php';
-    
-
+<?php    
     class ProductController {
 
         private static function check_id_errors($id) {

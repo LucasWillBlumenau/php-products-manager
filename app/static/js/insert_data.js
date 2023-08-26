@@ -8,12 +8,13 @@ const insertData = async ({ name: name, price: price }) => {
     const response = await fetch('endpoints/products/insert.php', {
         method: 'POST',
         headers: {
-            'Charset': 'UTF8'
+            'Authorization-Token': localStorage.getItem('authtoken')
         },
         body: data
     })
     return response
 }
+
 
 const submitData = async event => {
     event.preventDefault()
