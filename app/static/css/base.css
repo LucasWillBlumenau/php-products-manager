@@ -1,5 +1,9 @@
 :root {
-    --hover-color: #ff33d3;
+    --primary-bg-color: #222;
+    --secondary-bg-color: #000;
+    --tertiary-bg-color: #111;
+    --primary-color: #6d28f7;
+    --secondary-color: #8243ff;
 }
 
 * {
@@ -11,7 +15,7 @@
 html {
     font-family: sans-serif;
     color: #fff;
-    background-color: #222;
+    background-color: var(--primary-bg-color);
 }
 
 body {
@@ -35,7 +39,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
-    background-color: #000;
+    background-color: var(--secondary-bg-color);
 }
 
 .sidebar-list {
@@ -50,7 +54,7 @@ ul {
 }
 
 .sidebar-item a:hover {
-    color: var(--hover-color);
+    color: var(--secondary-color);
     transition: 200ms ease-in-out;
 }
 
